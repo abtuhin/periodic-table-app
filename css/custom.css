@@ -1,0 +1,63 @@
+.list-group-item{
+	margin: 0px auto;
+	background: #f5f5f5;
+	min-height: 17.5rem;
+}
+
+
+.list-group-item a:hover{
+	text-decoration: none;
+}
+
+
+
+.wrap{
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.badge{
+	background: #009688;
+}
+
+/*.well{
+	background: #222;
+	border: 1px #080008 solid;
+}*/
+
+.well>h1{
+	color: #009688;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 4px;
+}
+
+.atoms{
+	color: #616161;
+}
+
+.atomLarge{
+	font-size: 25rem;
+	background: #f5f5f5;
+	border: 1px #e3e3e3 solid;
+	text-align: center;
+	min-height: 35.9rem;
+	color: #616161;
+}
+
+b{
+	color: #3f51b5;
+	letter-spacing: 2px;
+
+}
+
+.detail{
+	
+	background: #f5f5f5;
+	border: 1px #e3e3e3 solid;
+	text-align: left;
+	padding: 5%;
+	min-height: 35.9rem;
+
+}

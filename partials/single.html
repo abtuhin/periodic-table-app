@@ -1,0 +1,22 @@
+<section class="col-md-12">
+	<div class="row" ng-model="atoms">
+		<div class="col-md-6">
+			<div class="atomLarge">
+				 {{atoms[whichItem].small}}
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="detail">
+				<h4>Name : <b>{{atoms[whichItem].name}}</b></h4>
+				<h4>Atomic Number : <b>{{atoms[whichItem].number}}</b></h4>
+				<h4>Atomic Group : <b>{{atoms[whichItem].group}}</b></h4>			
+				<h4>Table Position : <b>{{atoms[whichItem].position}}</b></h4>
+				<h4>Atomic Weight : <b>{{atoms[whichItem].molar}}</b></h4>
+				<h4>Electrons : <b>{{atoms[whichItem].electrons}}</b></h4>
+			</div>
+						
+		</div>
+		
+	</div>
+	<h2 align="center"><a href="#" class="btn btn-lg btn-success">&laquo; Back to search</a></h2>
+</section>
