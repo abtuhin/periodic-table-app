@@ -9,30 +9,25 @@
           <option value="group">Group</option>
           <option value="number">Atomic Number</option>
         </select>
-      
+
     </div>
   </div>
-  
-  
+
+
 </section>
 
 <div class="col-md-12 wrap">
-  <ul class="list-group row">
-    <li class="list-group-item col-md-3" ng-repeat="item in atoms | filter: query | orderBy:atomsOrder">
-      <a href="#/details/{{atoms.indexOf(item)}}">
-        <div class="atoms">
+  <div class="row">
+    <div class="col-md-2" ng-repeat="item in atoms | filter: query | orderBy:atomsOrder">
+      <a ng-if="item.number != ''" href="#/details/{{atoms.indexOf(item)}}" class="thumbnail" style="text-decoration:none;">
+        <div class="atoms" style="background:{{item.color}}">
           <div class="badge">{{item.number}}</div>
-          <h1 class="short">{{item.small}}</h1>
-          <h4 class="name">{{item.name | uppercase}}</h4>
-          <p class="molar">Weight : {{item.molar}}</p>
-          
+          <h4 class="short">{{item.small}}</h4>
+          <p class="name">{{item.name | uppercase}}</p>
+          <p class="molar">{{item.molar}}</p>
         </div>
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 
 </div>
-     
-
-
-
